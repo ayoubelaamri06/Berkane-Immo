@@ -31,13 +31,7 @@ web-mini-project/
  ├─ css/
  ├─ js/
  └─ assets/ ou images/
-
-▶️ Comment exécuter le projet
-
-Télécharger ou cloner le dépôt :
-git clone https://github.com/nom-utilisateur/nom-du-repo.git
-Ouvrir le fichier index.html
-Lancer le site dans un navigateur (Chrome, Edge, Firefox…)
+ 
 
 🚀 Fonctionnalités principales
 
