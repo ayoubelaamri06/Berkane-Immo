@@ -63,6 +63,22 @@ Projet réalisé en binôme dans le cadre d’un mini-projet académique.
 
  📸 Captures d’écran
 
+1 Accueil et Présentation
+![Page d'accueil](screenshots/accueil1.png)
+![Détail accueil](screenshots/accueil2.png)
+![Description](screenshots/description.png)
+
+2 Fonctionnalités
+![Estimation étape 1](screenshots/estimation1.png)
+![Estimation étape 2](screenshots/estimation2.png)
+![Exemples de prix](screenshots/exemples.png)
+
+3 Contact et Authentification
+![Page Contact](screenshots/contact.png)
+![Inscription](screenshots/inscription.png)
+![Connexion](screenshots/login.png)
+ 
+
 
 
 
