@@ -1,92 +1,25 @@
-🏠 Estimation des prix des maisons à Berkane
+# Berkane Immo ML
 
-📌 Description du projet
+## Structure
 
-Ce projet est un site web qui permet d’estimer facilement le prix des maisons à Berkane.
-Beaucoup de personnes ont du mal à connaître le vrai prix d’une maison : parfois le prix demandé est trop élevé, parfois on ne sait pas s’il est raisonnable.
-Ce site a été créé pour aider les utilisateurs à connaître la valeur réelle d’un bien immobilier à Berkane, sans effort et sans être expert.
-L’application est simple, claire et facile à utiliser : il suffit de saisir quelques informations sur la maison pour obtenir une estimation.
+- `app.py`: Flask application, API endpoints and page routing
+- `web/templates/`: server-rendered HTML pages
+- `web/static/`: CSS and JavaScript assets
+- `ml/`: validation, training and inference
+- `data/`: documented datasets
+- `models/`: generated model metadata and artifacts
+- `scripts/`: reproducible data-generation commands
+- `tests/`: automated tests
 
+## Run
 
+```bash
+pip install -r requirements.txt
+python -m scripts.generate_demo_data
+python -m ml.modeling --data data/demo_properties.csv --model models/berkane_price_model.joblib --metrics models/metrics.json --data-kind synthetic-demo
+python app.py
+```
 
-🎯 Objectifs du projet
+Open `http://127.0.0.1:5000/` or `/estimation.html`.
 
-Faciliter l’estimation du prix des maisons à Berkane
-Aider les acheteurs et les vendeurs à prendre de meilleures décisions
-Proposer une interface simple et accessible à tous
-Mettre en pratique le développement web et l’utilisation de GitHub
-
-
-
-🛠️ Technologies utilisées
-
-HTML5
-CSS3
-JavaScript
-Git & GitHub
-
-
-
-📁 Structure du projet
-
-web-mini-project/
- ├─ index.html
- ├─ description.html
- ├─ estimation.html
- ├─ contact.html
- ├─ login.html
- ├─ signup.html
- ├─ css/
- ├─ js/
- └─ assets/ ou images/
- 
-
-
-🚀 Fonctionnalités principales
-
-Page d’accueil présentant le projet
-Page de description du site
-Formulaire d’estimation du prix d’une maison
-Formulaire de contact
-Pages d’authentification (login / inscription)
-
-
-
-👥 Travail en binôme
-
-Projet réalisé en binôme dans le cadre d’un mini-projet académique.
-🔹 ALLAOUI Yassine
-🔹 EL AAMRI Ayoub
-
-
-
-
- 📸 Captures d’écran
-
-1 Accueil et Présentation
-
-![Page d'accueil](screenshots/accueil1.png)
-![Détail accueil](screenshots/accueil2.png)
-![Description](screenshots/description.png)
-
-2 Fonctionnalités
-
-![Estimation étape 1](screenshots/estimation1.png)
-![Estimation étape 2](screenshots/estimation2.png)
-![Exemples de prix](screenshots/exemples.png)
-
-3 Contact et Authentification
-
-![Page Contact](screenshots/contact.png)
-![Inscription](screenshots/inscription.png)
-![Connexion](screenshots/login.png)
- 
-
-
-
-
-
-
-
-📜 Licence
-Projet académique — utilisation à but éducatif.
+The included dataset is synthetic and the output is not a professional valuation.
